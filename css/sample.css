@@ -1,6 +1,6 @@
 h1 {
   font-family: 'Lato', sans-serif;
-  font-size: 30px;
+  font-size: 27px;
   color: #ffffff;
   font-weight: 200;
   letter-spacing: 0.5px;
@@ -10,7 +10,7 @@ h1 {
 
 h2 {
   font-family: 'Lato', sans-serif;
-  font-size: 24px;
+  font-size: 21px;
   color: #ffffff;
   font-weight: 100;
   text-align: center;
@@ -18,17 +18,27 @@ h2 {
 
 h3 {
   font-family: 'Lato', sans-serif;
-  font-size: 21px;
+  font-size: 17px;
   color: #52527a;
   font-weight: bold;
+  text-align: center;
 }
 
 p {
   font-family: 'Lato', sans-serif;
-  font-size: 17px;
+  font-size: 15px;
   color: #52527a;
-  font-weight: 100;
+  font-weight: 200;
+  text-align: center;
 }
+
+.clickOn {
+  color: #e6994c;
+  font-size: 13px;
+  text-align: right;
+  font-weight: 300;
+}
+	
 
 * {
   box-sizing: border-box;
@@ -57,7 +67,6 @@ body {
   z-index: -2;
 }
 
-/* Container around content */
 .container {
   padding: 10px 40px;
   position: relative;
@@ -79,17 +88,15 @@ body {
   z-index: -1;
 }
 
-/* Place the container to the left */
 .left {
   left: 0;
 }
 
-/* Place the container to the right */
 .right {
   left: 50%;
 }
 
-/* Add arrows to the left container */
+/* Arrows of left container */
 .left::before {
   content: " ";
   height: 0;
@@ -103,7 +110,7 @@ body {
   border-color: transparent transparent transparent white;
 }
 
-/* Add arrows to the right container */
+/* Arrows of the right container */
 .right::before {
   content: " ";
   height: 0;
@@ -124,7 +131,7 @@ body {
 
 /* The actual content */
 .content {
-  padding: 20px 30px;
+  padding: 10px 20px;
   background-color: white;
   position: relative;
   border-radius: 6px;
@@ -163,29 +170,21 @@ body {
   }
 }
 
+
 img {
 	width: 100%;
 }
 
-
-#portfolio2 {
-  border-radius: 5px;
-  cursor: pointer;
-  transition: 0.3s;
-}
-
-#portfolio2:hover {opacity: 0.7;}
-
 /* The Modal (background) */
 .modal {
   display: none; /* Hidden by default */
-  position: fixed; /* Stay in place */
+  position: fixed; 
   z-index: 1; /* Sit on top */
   padding-top: 100px; /* Location of the box */
   left: 0;
   top: 0;
-  width: 100%; /* Full width */
-  height: 100%; /* Full height */
+  width: 100%; 
+  height: 100%; 
   overflow: auto; /* Enable scroll if needed */
   background-color: rgb(0,0,0); /* Fallback color */
   background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
@@ -199,20 +198,8 @@ img {
   max-width: 700px;
 }
 
-/* Caption of Modal Image (Image Text) - Same Width as the Image */
-#caption {
-  margin: auto;
-  display: block;
-  width: 80%;
-  max-width: 700px;
-  text-align: center;
-  color: #ccc;
-  padding: 10px 0;
-  height: 150px;
-}
-
 /* Add Animation - Zoom in the Modal */
-.modal-content, #caption { 
+.modal-content { 
   -webkit-animation-name: zoom;
   -webkit-animation-duration: 0.6s;
   animation-name: zoom;
